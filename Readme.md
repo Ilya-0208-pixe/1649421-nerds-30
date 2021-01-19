@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Илья Кочуров](https://up.htmlacademy.ru/htmlcss/30/user/1649421).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Островский](https://htmlacademy.ru/profile/grandmaus).
 
 ---
 
