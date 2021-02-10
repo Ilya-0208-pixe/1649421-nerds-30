@@ -1,0 +1,159 @@
+/* Variables */
+
+:root {
+  --background: #888888;
+  --basic-white: #FFFFFF;
+  --basic-red: #FB565A;
+  --basic-background: #283136;
+  --basic-black: #000000;
+  --basic-gray: #EEEEEE;
+  --basic-yellow: #EFC849;
+  --basic-green: #00CA74;
+  --hover-green: #00BC6C;
+  --click-green: #00AA62;
+  --basic-dark-grey: #A6A6A6;
+  --basic-light-grey: #E1E1E1;
+  --DimGrey: #666666;
+  --background: #444444;
+}
+
+/* Global */
+
+.page-body {
+  min-width: 1440px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 545;
+  color: var(--basic-background);
+  text-transform: none;
+  background-color: var( #888888;);
+  background-image: url("../img/bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: var(--basic-gray);
+}
+
+.site-navigation,
+.slides,
+.button-slide {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.basket-link a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-red);
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-web-sites {
+  text-align: left;
+}
+
+.services-applications {
+  text-align: center;
+}
+.services-presentations {
+  text-align: right;
+}
+
+.services-web-sites h3,
+.services-applications h3,
+.services-presentations h3 {
+  color: var(--basic-black);
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.description h3 {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.description p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.description h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.logo {
+  list-style: none;
+}
+
+/* Button */
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+.button-services-applications {
+  background-color: var(--basic-green);
+}
+
+.button-services-presentations {
+  background-color: var(--basic-yellow);
+}
+
+.values {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: #000000;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+/* Social button */
+.social-button {
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.social-button a:hover,
+.social-button a:focus {
+  background-color: var(--basic-red);
+}
+/* Contacts */
+
+.main-footer p,
+.footer-phone {
+  color: DimGrey;
+}
