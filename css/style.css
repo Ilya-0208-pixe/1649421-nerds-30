@@ -1,159 +1,319 @@
 /* Variables */
 
 :root {
-  --background: #888888;
-  --basic-white: #FFFFFF;
-  --basic-red: #FB565A;
-  --basic-background: #283136;
-  --basic-black: #000000;
-  --basic-gray: #EEEEEE;
-  --basic-yellow: #EFC849;
-  --basic-green: #00CA74;
-  --hover-green: #00BC6C;
-  --click-green: #00AA62;
-  --basic-dark-grey: #A6A6A6;
-  --basic-light-grey: #E1E1E1;
-  --DimGrey: #666666;
-  --background: #444444;
+    --background: #888888;
+    --basic-white: #FFFFFF;
+    --basic-red: #FB565A;
+    --hover-red: #E74246;
+    --click-red: #D7373B;
+    --basic-background: #283136;
+    --basic-black: #000000;
+    --basic-gray: #EEEEEE;
+    --hover-gray: #DFDFDF;
+    --click-gray: #D5D5D5;
+    --basic-yellow: #EFC849;
+    --hover-yellow: #EAB534;
+    --click-yellow: #E5A722;
+    --basic-green: #00CA74;
+    --hover-green: #00BC6C;
+    --click-green: #00AA62;
+    --basic-dark-grey: #A6A6A6;
+    --basic-light-grey: #E1E1E1;
+    --DimGrey: #666666;
+    --background: #444444;
+    --Shape-basik: #4D4D4D;
+    --hover-logo: #000000 70 %;
+    --click-logo: #000000 30 %;
 }
+
 
 /* Global */
 
 .page-body {
-  min-width: 1440px;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 545;
-  color: var(--basic-background);
-  text-transform: none;
-  background-color: var( #888888;);
-  background-image: url("../img/bg.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+    min-width: 1440px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 545;
+    color: var(--basic-background);
+    text-transform: none;
+    background-color: var( #888888);
+    background-image: url("../img/bg.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
+
 
 /* Main navigation */
 
 .main-navigation {
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--basic-black);
-  background-color: var(--basic-gray);
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black);
+    background-color: var(--basic-gray);
 }
 
 .site-navigation,
 .slides,
 .button-slide {
-  list-style: none;
+    list-style: none;
 }
+
+
+/* nerds-logo */
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+    background-color: var(--hover-logo)
+}
+
 
 /* User navigation */
 
-.site-navigation a,
-.basket-link a {
-  color: var(--basic-black);
+.site-navigation a {
+    color: var(--basic-black);
+}
+
+.site-navigation,
+.basket-link {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    position: absolute;
+    width: 437px;
+    height: 30px;
+    left: 502px;
+    top: 75px;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
 .user-navigation a:hover,
 .user-navigation a:focus {
-  background-color: var(--basic-red);
+    background-color: var(--basic-red);
+}
+
+
+/* Button */
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    border-radius: 3px;
+    align-items: center;
+}
+
+
+/* Долго, дорого, скрупулезно. */
+
+.slide1 h1,
+.slide2 h1,
+.slide3 h1 {
+    font-size: 55px;
+    line-height: 55px;
+    align-items: center;
+    color: var(--basic-black);
+}
+
+
+/* Математически выверенный дизайн для вашего сайта или мобильног */
+
+.slide p {
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    color: #283136;
+}
+
+
+/* button-slides  УЗНАТЬ БОЛЬШЕ */
+
+.button-slides {
+    width: 240px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center
 }
 
 .services-list {
-  list-style: none;
-}
-
-.services-web-sites {
-  text-align: left;
-}
-
-.services-applications {
-  text-align: center;
-}
-.services-presentations {
-  text-align: right;
+    list-style: none;
 }
 
 .services-web-sites h3,
 .services-applications h3,
 .services-presentations h3 {
-  color: var(--basic-black);
-  font-size: 24px;
-  line-height: 30px;
+    color: var(--basic-black);
+    font-size: 24px;
+    line-height: 30px;
 }
 
-.description h3 {
-  font-size: 45px;
-  line-height: 45px;
-}
-
-.description p {
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.description h4 {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.logo {
-  list-style: none;
-}
-
-/* Button */
-
-.button {
-  font: inherit;
-  text-align: center;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
+.button-services-web-sites,
+.button-services-applications,
+.button-services-presentations {
+    width: 160px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center
 }
 
 .button-services-applications {
-  background-color: var(--basic-green);
+    background-color: var(--basic-green);
+}
+
+.button-services-applications:hover,
+.button-services-applications:focus {
+    background-color: var(--hover-green);
 }
 
 .button-services-presentations {
-  background-color: var(--basic-yellow);
+    background-color: var(--basic-yellow);
+}
+
+.button-services-presentations:hover,
+.button-services-presentations:focus {
+    background-color: var(--hover-yellow);
+}
+
+.description h3 {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.description h4 {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+
+/* Выполняем заказы на */
+
+.development-title {
+    color: #283136;
+}
+
+
+/* с 2004 года Любим точность во всем: */
+
+.logo {
+    list-style: none;
+}
+
+.logo a:hover,
+.logo a:focus {
+    cursor: default;
+    background-color: var(--basic-black);
 }
 
 .values {
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 64px;
-  color: #000000;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 64px;
+    color: var(--basic-black);
 }
 
-.footer-social {
-  list-style: none;
+
+/* NЁRDS DESIGN STUDIO */
+
+.main-footer h3 {
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--basic-black);
 }
 
-/* Social button */
-.social-button {
-  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-}
 
-.social-button a:hover,
-.social-button a:focus {
-  background-color: var(--basic-red);
-}
 /* Contacts */
 
 .main-footer p,
 .footer-phone {
-  color: DimGrey;
+    color: DimGrey;
+}
+
+.footer-social {
+    list-style: none;
+}
+
+.button-footer {
+    width: 219px;
+    height: 50px;
+    left: 190px;
+    top: 2108px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center
+}
+
+
+/* Давайте дружить, это выгодно! */
+
+.footer-content {
+    width: 660px;
+    height: 36px;
+    font-size: 36px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: var(--basic-black);
+}
+
+.button-slides:hover,
+.button-slides:focus {
+    cursor: default;
+    background-color: var(--hover-red);
+}
+
+.button-services-web-sites:hover,
+.button-services-web-sites:focus {
+    cursor: default;
+    background-color: var(--hover-red);
+}
+
+.button-footer:hover,
+.button-footer:focus {
+    cursor: default;
+    background-color: var(--hover-red);
+}
+
+
+/* Social button */
+
+.social-button {
+    background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+    text-decoration: none;
+}
+
+.social-button a:hover,
+.social-button a:focus {
+    cursor: default;
+    background-color: var(--basic-red);
+}
+
+.social-button.disabled,
+.social-button:disabled {
+    cursor: default;
+    background-color: var(--basic-red);
 }
