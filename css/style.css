@@ -1,6 +1,6 @@
 /* Variables */
 
-:root {
+ :root {
     --background: #888888;
     --basic-white: #FFFFFF;
     --basic-red: #FB565A;
@@ -10,7 +10,7 @@
     --basic-black: #000000;
     --basic-gray: #EEEEEE;
     --hover-gray: #DFDFDF;
-    --click-gray: #D5D5D5;
+    --active-gray: #D5D5D5;
     --basic-yellow: #EFC849;
     --hover-yellow: #EAB534;
     --active-yellow: #E5A722;
@@ -21,6 +21,7 @@
     --basic-light-grey: #E1E1E1;
     --hover-logo: rgba(0, 0, 0, 1);
     --active-logo: rgba(0, 0, 0, 0.3);
+    --basik-radioblack: #4D4D4D;
 }
 
 
@@ -411,11 +412,206 @@ img {
     text-decoration: none;
 }
 
-.social-button a:hover,
-.social-button a:focus {
+.social-button:hover,
+.social-button:focus {
     background-color: var(--basic-red);
 }
 
 .social-button a:active {
     background-color: rgba(215, 55, 59, 1);
+}
+
+
+/* Презентации каталога*/
+
+.form-filter {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+
+/* Пункты сетки каталога*/
+
+.grid-item {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(40, 49, 54, 1);
+    list-style: none;
+}
+
+
+/* Пункты сетки особенностей*/
+
+.features-item {
+    list-style: none;
+}
+
+
+/*кнопка стоимость сайта*/
+
+.button-sites-cost {
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-sites-cost:hover,
+.button-sites-cost:focus {
+    background-color: var(--hover-red);
+}
+
+.button-sites-cost:active {
+    background-color: var(--active-red);
+}
+
+
+/* Сортировать */
+
+.sort {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+
+/* По цене По типу По названию */
+
+.sort-item {
+    color: rgba(0, 0, 0, 1);
+    opacity: 0.3;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.sort-item:hover,
+.sort-item:focus {
+    opacity: 0.6;
+}
+
+.sort-item:active {
+    opacity: 1;
+}
+
+
+/* ПОКАЗАТЬ */
+
+.grey-button {
+    width: 260px;
+    height: 50px;
+    background: var(--basic-gray);
+    color: var(--basic-black);
+    border-style: none;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.grey-button:hover,
+.grey-button:focus {
+    background: var(--hover-gray);
+    border-style: none;
+}
+
+.grey-button:active {
+    background: var(--active-gray);
+    color: rgba(0, 0, 0, 0.3);
+    border-style: none;
+}
+
+.site-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.site-name:hover,
+.site-name:focus {
+    color: var(--basic-red);
+}
+
+.site-name:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.site-info {
+    color: rgba(102, 102, 102, 1);
+}
+
+.filter-items {
+    color: var(--basic-background);
+}
+
+.filter-items:hover,
+.filter-items:focus {
+    color: var(--basic-background);
+}
+
+.filter-items:active {
+    /*disabled?*/
+    color: var(--basic-background);
+    opacity: 0.3;
+}
+
+.radio-input {
+    cursor: pointer;
+    background: var(--basik-radioblack);
+}
+
+
+/* page active */
+
+.list-pages {
+    list-style: none;
+}
+
+.page-number {
+    width: 50px;
+    height: 50px;
+    background: var(--basic-gray);
+    border-radius: 3px;
+    color: var(--basic-black);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center
+}
+
+
+/* page active */
+
+.page-active {
+    background: rgba(0, 0, 0, 0.0001);
+    border: 3px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.next {
+    width: 260px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.page-number:hover,
+.page-number:focus,
+.next:hover,
+.next:focus {
+    background: var(--hover-gray);
+}
+
+.page-number:active,
+.next:active {
+    background: var(--active-gray);
+    color: rgba(0, 0, 0, 0.3);
 }
