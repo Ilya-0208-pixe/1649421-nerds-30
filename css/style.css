@@ -28,7 +28,6 @@
 /* Global */
 
 .page-body {
-    min-width: 1440px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", "Arial", sans-serif;
@@ -41,6 +40,10 @@
     background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
 }
 
 img {
@@ -48,10 +51,44 @@ img {
     height: auto;
 }
 
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+}
+
+
+/*main-header-logo*/
+
+.main-header-logo {
+    width: 160px;
+    height: 65px;
+    margin-right: 200px;
+    margin-top: 49px;
+}
+
+.site-navigation {
+    width: 437px;
+    height: 30px;
+    margin-top: 75px;
+    margin-right: 285px;
+}
+
+.site-navigation-basket {
+    width: 75px;
+    height: 30px;
+    margin-top: 90px;
+}
+
 
 /* Main navigation */
 
 .main-navigation {
+    display: flex;
     font-size: 16px;
     line-height: 30px;
     color: var(--basic-black);
@@ -59,39 +96,54 @@ img {
     text-transform: uppercase;
 }
 
-.site-navigation,
+.slide {
+    display: flex;
+}
+
+
+/* Container */
+
+.container {
+    width: 1160px;
+    margin: 0 auto;
+}
+
+.site-navigation-list,
 .slides,
 .button-slide {
     list-style: none;
 }
 
 
-/* nerds-logo */
-
-
 /* User navigation */
 
-.site-navigation a,
+.site-navigation-list a,
 .basket-link {
     color: var(--basic-black);
     text-decoration: none;
 }
 
-.site-navigation,
+.site-navigation-list,
 .basket-link {
     display: flex;
-    align-items: center;
     width: 437px;
     height: 30px;
-    left: 502px;
-    top: 75px;
     text-decoration: none;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation-list {
+    flex-direction: row;
+    padding: 0px;
+}
+
+.site-navigation-list a {
+    margin-right: 45px;
+}
+
+.site-navigation-list a:hover,
+.site-navigation-list a:focus,
+.user-navigation-list a:hover,
+.user-navigation-list a:focus {
     color: var(--basic-red);
 }
 
@@ -100,7 +152,7 @@ img {
     color: var(--basic-red);
 }
 
-.site-navigation a:active,
+.site-navigation-list a:active,
 .site-navigation-basket:active {
     color: var(--basic-black);
     opacity: 0.3;
@@ -129,6 +181,16 @@ img {
     line-height: 55px;
     align-items: center;
     color: var(--basic-black);
+}
+
+.slide3,
+.slide2 {
+    display: none;
+}
+
+.slide11 h1 {
+    width: 538px;
+    height: 111px;
 }
 
 
@@ -163,7 +225,17 @@ img {
 }
 
 .services-list {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
     list-style: none;
+}
+
+.services-list p {
+    text-transform: none;
 }
 
 .services-web-sites h3,
@@ -232,6 +304,11 @@ img {
     color: rgba(255, 255, 255, 0.3);
 }
 
+.description {
+    display: grid;
+    grid-template-columns: 800px 360px;
+}
+
 .description h3 {
     font-size: 45px;
     line-height: 45px;
@@ -261,6 +338,8 @@ img {
 
 .logo {
     list-style: none;
+    display: flex;
+    padding-left: 0;
 }
 
 
@@ -268,6 +347,7 @@ img {
 
 .logo-1 {
     opacity: 0.2;
+    margin-right: 95px;
 }
 
 .logo-1:hover,
@@ -284,6 +364,7 @@ img {
 
 .logo-2 {
     opacity: 0.2;
+    margin-right: 104px;
 }
 
 .logo-2:hover,
@@ -300,6 +381,7 @@ img {
 
 .logo-3 {
     opacity: 0.2;
+    margin-right: 130px;
 }
 
 .logo-3:hover,
@@ -337,13 +419,46 @@ img {
 
 /* NЁRDS DESIGN STUDIO */
 
-.main-footer h3 {
+.footer-block-1 h3 {
     font-size: 18px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
     color: var(--basic-black);
+}
+
+.footer-block-1 {
+    background: var(--basic-white);
+    position: absolute;
+    width: 319px;
+    height: 308px;
+    margin: 54px auto 54px 140px;
+}
+
+.footer-block-1 h3 {
+    width: 193px;
+    height: 30px;
+    margin-top: 49px;
+    margin-left: 50px;
+}
+
+.footer-block-12 {
+    width: 230px;
+    height: 72px;
+    margin-left: 50px;
+}
+
+.footer-block-2 img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.footer-block-4 {
+    display: flex;
+}
+
+.footer-block-3 {
+    margin-right: 139px;
 }
 
 
@@ -357,19 +472,15 @@ img {
 
 .footer-social {
     list-style: none;
+    display: flex;
 }
 
 
 /* Давайте дружить, это выгодно! */
 
 .footer-content {
-    width: 660px;
-    height: 36px;
     font-size: 36px;
     line-height: 36px;
-    display: flex;
-    align-items: center;
-    font-weight: bold;
     color: var(--basic-black);
 }
 
@@ -384,13 +495,13 @@ img {
 .button-footer {
     width: 219px;
     height: 50px;
-    left: 190px;
-    top: 2108px;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
     text-transform: uppercase;
+    margin-left: 50px;
+    margin-top: 37px;
 }
 
 .button-footer:hover,
@@ -405,6 +516,10 @@ img {
 
 
 /* Social button */
+
+.social-button {
+    margin-right: 9px;
+}
 
 .social-button a {
     background-color: var(--basic-light-grey);
@@ -615,3 +730,6 @@ img {
     background: var(--active-gray);
     color: rgba(0, 0, 0, 0.3);
 }
+
+
+/* Grid */
