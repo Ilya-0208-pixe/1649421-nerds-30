@@ -537,6 +537,20 @@ img {
 }
 
 
+/*заголовок каталога*/
+
+.directory-header {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.catalog-page {
+    display: grid;
+    grid-template-columns: 400px 400px 360px;
+}
+
+
 /* Презентации каталога*/
 
 .form-filter {
@@ -554,6 +568,33 @@ img {
     line-height: 20px;
     color: rgba(40, 49, 54, 1);
     list-style: none;
+}
+
+.grid-item,
+.features-item {
+    padding: 0px;
+}
+
+.column-left {
+    margin-left: 0 auto;
+}
+
+.site-group {
+    list-style: none;
+    padding: 0px;
+}
+
+.site-group-item {
+    margin-bottom: 32px;
+    padding: 0px;
+}
+
+.sort {
+    display: flex;
+    padding: 0px;
+    margin-bottom: 20px;
+    list-style: none;
+    text-transform: uppercase;
 }
 
 
@@ -587,14 +628,6 @@ img {
 }
 
 
-/* Сортировать */
-
-.sort {
-    list-style: none;
-    text-transform: uppercase;
-}
-
-
 /* По цене По типу По названию */
 
 .sort-item {
@@ -603,6 +636,7 @@ img {
     text-decoration: none;
     font-size: 14px;
     line-height: 18px;
+    margin-right: 25px;
 }
 
 .sort-item:hover,
@@ -673,7 +707,6 @@ img {
 }
 
 .filter-items:active {
-    /*disabled?*/
     color: var(--basic-background);
     opacity: 0.3;
 }
@@ -683,11 +716,11 @@ img {
     background: var(--basik-radioblack);
 }
 
-
-/* page active */
-
 .list-pages {
     list-style: none;
+    display: flex;
+    padding: 0px;
+    margin-right: 11px;
 }
 
 .page-number {
@@ -699,11 +732,9 @@ img {
     display: flex;
     align-items: center;
     text-align: center;
-    justify-content: center
+    justify-content: center;
+    margin-right: 11px;
 }
-
-
-/* page active */
 
 .page-active {
     background: rgba(0, 0, 0, 0.0001);
@@ -730,6 +761,3 @@ img {
     background: var(--active-gray);
     color: rgba(0, 0, 0, 0.3);
 }
-
-
-/* Grid */
