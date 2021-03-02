@@ -623,6 +623,22 @@ img {
     position: relative;
 }
 
+.Pink-App {
+    order: -2;
+}
+
+.Sedona {
+    order: -2;
+}
+
+.mishka {
+    order: -1;
+}
+
+.Barbershop {
+    order: -1;
+}
+
 .sort {
     display: flex;
     padding: 0px;
