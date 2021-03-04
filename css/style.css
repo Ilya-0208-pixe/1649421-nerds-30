@@ -618,6 +618,11 @@ img {
     grid-template-columns: 400px 760px;
 }
 
+.column-left {
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Презентации каталога*/
 
@@ -837,6 +842,8 @@ img {
     display: flex;
     padding: 0px;
     margin-right: 11px;
+    margin-top: 55px;
+    margin-bottom: 60px;
 }
 
 .page-number {
