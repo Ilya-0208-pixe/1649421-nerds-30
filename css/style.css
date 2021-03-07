@@ -464,11 +464,6 @@ img {
     margin-bottom: 31px;
 }
 
-.main-footer {
-    width: 1440px;
-    margin: 0 auto;
-}
-
 
 /* NЁRDS DESIGN STUDIO */
 
@@ -481,10 +476,9 @@ img {
 
 .footer-block-1 {
     background: var(--basic-white);
-    position: absolute;
     width: 319px;
     height: 308px;
-    margin: 54px auto 54px 140px;
+    position: absolute;
 }
 
 .footer-block-1 h3 {
@@ -500,10 +494,16 @@ img {
     margin-left: 50px;
 }
 
+.footer-block-2 {
+    display: flex;
+    align-items: center;
+}
+
 .footer-block-2 img {
     width: 100%;
     object-fit: cover;
     display: block;
+    background: url(img/map1.png) no-repeat;
 }
 
 .footer-block-4 {
