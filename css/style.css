@@ -20,6 +20,9 @@
     --hover-logo: rgba(0, 0, 0, 1);
     --active-logo: rgba(0, 0, 0, 0.3);
     --basik-radioblack: #4D4D4D;
+    --border-input: #D7DCDE;
+    --border-input-hover: #B4B9BB;
+    --socials-discount-text: #444444;
 }
 
 
@@ -130,9 +133,6 @@ img {
     height: auto;
 }
 
-
-/* Container */
-
 .container {
     width: 1160px;
     margin: 0 auto;
@@ -204,7 +204,6 @@ img {
 .site-navigation-list,
 .basket-link {
     display: flex;
-    width: 437px;
     height: 30px;
     text-decoration: none;
 }
@@ -217,12 +216,12 @@ img {
     left: 3px;
 }
 
-.site-navigation-list::after {
+.site-list-catalog::after {
     content: "";
     position: absolute;
     width: 73px;
     height: 2px;
-    background-image: url("../img/Layer-73х2.png");
+    background-image: url("../img/layer-73х2.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 231px;
@@ -264,9 +263,7 @@ img {
     text-decoration: none;
 }
 
-.slide1 h1,
-.slide2 h1,
-.slide3 h1 {
+.slide1 h1 {
     font-size: 55px;
     line-height: 55px;
     align-items: center;
@@ -274,18 +271,58 @@ img {
     width: 398px;
 }
 
-.slide3,
-.slide2 {
+.slide2 h1 {
+    display: flex;
+    font-size: 55px;
+    line-height: 55px;
+    align-items: center;
+    color: var(--basic-black);
+    width: 538px;
+    position: relative;
+    margin-bottom: 49px;
+}
+
+.slide2 p {
+    margin-bottom: 27px;
+}
+
+.slide2 img {
+    position: absolute;
+    right: 182px;
+}
+
+.slide3 h1 {
+    font-size: 55px;
+    line-height: 55px;
+    align-items: center;
+    color: var(--basic-black);
+    width: 538px;
+    position: relative;
+    margin-bottom: 49px;
+}
+
+.slide3 img {
+    position: absolute;
+    right: 182px;
+}
+
+.slide3 p {
+    margin-bottom: 27px;
+}
+
+.slide2,
+.slide1 {
     display: none;
+}
+
+.slide2-img {
+    display: inline;
 }
 
 .slide11 h1 {
     width: 538px;
     height: 111px;
 }
-
-
-/* Математически выверенный дизайн для вашего сайта или мобильног */
 
 .slide p {
     font-size: 16px;
@@ -294,9 +331,6 @@ img {
     color: #283136;
     margin-top: -10px;
 }
-
-
-/* button-slides  УЗНАТЬ БОЛЬШЕ */
 
 .button-slides {
     width: 240px;
@@ -313,7 +347,6 @@ img {
     box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
     background-color: var(--active-red);
     color: rgba(255, 255, 255, 0.3);
-    /*для текста 4й параметр opacity*/
 }
 
 .services-list {
@@ -358,9 +391,6 @@ img {
     justify-content: center
 }
 
-
-/*заказать красный*/
-
 .button-services-web-sites:hover,
 .button-services-web-sites:focus {
     background-color: var(--hover-red);
@@ -370,9 +400,6 @@ img {
     background-color: var(--active-red);
     color: rgba(255, 255, 255, 0.3);
 }
-
-
-/*заказать зеленый*/
 
 .button-services-applications {
     background-color: var(--basic-green);
@@ -387,9 +414,6 @@ img {
     background-color: var(--active-green);
     color: rgba(255, 255, 255, 0.3);
 }
-
-
-/*заказать желтый*/
 
 .button-services-presentations {
     background-color: var(--basic-yellow);
@@ -417,7 +441,7 @@ img {
     height: 2px;
     content: "";
     position: absolute;
-    background-image: url("../img/Rectangle-16.png");
+    background-image: url("../img/rectangle-16.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     top: -41px;
@@ -453,9 +477,6 @@ img {
     margin-bottom: 23px;
 }
 
-
-/* Выполняем заказы на */
-
 .development-title {
     color: #283136;
 }
@@ -478,7 +499,7 @@ img {
     height: 2px;
     content: "";
     position: absolute;
-    background-image: url("../img/Rectangle-25x2.png");
+    background-image: url("../img/rectangle-25x2.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     top: 12px;
@@ -504,7 +525,7 @@ img {
     height: 2px;
     content: "";
     position: absolute;
-    background-image: url("../img/Rectangle-16.png");
+    background-image: url("../img/rectangle-16.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     top: -70px;
@@ -515,7 +536,7 @@ img {
     height: 2px;
     content: "";
     position: absolute;
-    background-image: url("../img/Rectangle-16.png");
+    background-image: url("../img/rectangle-16.png");
     background-repeat: repeat (3, 1 00px);
     background-position: 0 0;
     top: 112px;
@@ -535,7 +556,7 @@ img {
     height: 52px;
     content: "";
     position: absolute;
-    background-image: url("../img/Rectangle-2x52.png");
+    background-image: url("../img/rectangle-2x52.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 247px;
@@ -566,7 +587,7 @@ img {
     height: 52px;
     content: "";
     position: absolute;
-    background-image: url("../img/Rectangle-2x52.png");
+    background-image: url("../img/rectangle-2x52.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 252px;
@@ -597,7 +618,7 @@ img {
     height: 52px;
     content: "";
     position: absolute;
-    background-image: url("../img/Rectangle-2x52.png");
+    background-image: url("../img/rectangle-2x52.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 240px;
@@ -644,9 +665,6 @@ img {
     margin-bottom: 31px;
     margin-left: 19px;
 }
-
-
-/* NЁRDS DESIGN STUDIO */
 
 .contact h3 {
     font-size: 18px;
@@ -707,11 +725,11 @@ img {
 .main-footer p {
     color: DimGrey;
     text-decoration: none;
-    width: 230px;
-    height: 72px;
     font-size: 16px;
-    margin-top: 22px;
-    margin-bottom: -19px;
+    margin-top: 21px;
+    margin-bottom: -23px;
+    width: 360px;
+    height: 77px;
 }
 
 .footer-phone {
@@ -726,9 +744,6 @@ img {
 .footer-social li {
     margin-right: 9px;
 }
-
-
-/* Давайте дружить, это выгодно! */
 
 .footer-content {
     font-size: 37px;
@@ -751,9 +766,6 @@ img {
 .button-slides:focus {
     background-color: var(--hover-red);
 }
-
-
-/*напишите нам*/
 
 .button-footer {
     width: 219px;
@@ -834,7 +846,6 @@ img {
     height: 10px;
 }
 
-.icon-down path,
 .icon-up path {
     fill: var(--basic-dark-grey);
     opacity: 0.2;
@@ -848,7 +859,11 @@ img {
     opacity: 1;
 }
 
-.icon-down:active path,
+.icon-down path {
+    fill: rgba(35, 31, 32, 1);
+    opacity: 1;
+}
+
 .icon-up:active path {
     fill: rgba(35, 31, 32, 1);
     opacity: 1;
@@ -873,9 +888,6 @@ img {
     fill: rgba(215, 55, 59, 1);
     opacity: 0.3;
 }
-
-
-/*заголовок каталога*/
 
 .directory-header {
     display: flex;
@@ -903,9 +915,6 @@ img {
     margin: 0;
 }
 
-
-/* Презентации каталога*/
-
 .form-filter {
     font-weight: bold;
     font-size: 18px;
@@ -913,9 +922,6 @@ img {
     text-transform: uppercase;
     margin-bottom: -3px;
 }
-
-
-/* Пункты сетки каталога*/
 
 .grid-item {
     font-size: 19px;
@@ -970,7 +976,7 @@ img {
     padding: 0px;
     height: 30px;
     width: 115px;
-    margin-bottom: 62px;
+    margin-bottom: 72px;
 }
 
 .sort-block h2 {
@@ -1034,6 +1040,11 @@ img {
     opacity: 1;
 }
 
+.link-site-name {
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
 .Pink-App {
     order: -2;
 }
@@ -1060,9 +1071,6 @@ img {
     margin-top: 7px;
     margin-left: 3px;
 }
-
-
-/* Пункты сетки особенностей*/
 
 .features-item {
     list-style: none;
@@ -1110,9 +1118,6 @@ img {
     display: none;
 }
 
-
-/*кнопка стоимость сайта*/
-
 .button-sites-cost {
     width: 200px;
     height: 50px;
@@ -1133,9 +1138,6 @@ img {
 .button-sites-cost:active {
     background-color: var(--active-red);
 }
-
-
-/* По цене По типу По названию */
 
 .sort-item {
     color: rgba(0, 0, 0, 1);
@@ -1159,8 +1161,10 @@ img {
     opacity: 1;
 }
 
-
-/* ПОКАЗАТЬ */
+.sort-item-active {
+    color: rgba(0, 0, 0, 1);
+    opacity: 1;
+}
 
 .grey-button {
     width: 260px;
@@ -1394,4 +1398,229 @@ img {
     padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: var(--basic-white);
+    box-shadow: 0 20px 40px 0 var( --background);
+    width: 960px;
+    height: 590px;
+    padding: 63px 99px 84px 100px;
+    box-sizing: border-box;
+    z-index: 100;
+    display: none;
+}
+
+.modal-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-2000px);
+    }
+    70% {
+        transform: translateY(30px);
+    }
+    90% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.modal-error {
+    animation: shake 0.6s;
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(10px);
+    }
+}
+
+.modal-contacts-name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.modal-login {
+    padding: 0;
+    margin: 0;
+    width: 360px;
+}
+
+.modal-login-m {
+    margin: 0 0 41px;
+    padding: 0;
+}
+
+.modal-label {
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-black);
+    font-family: "RobotoB", "Arial", "sans-serif";
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-input {
+    font-family: "Roboto", "Arial", "sans-serif";
+    width: 339px;
+    height: 46px;
+    border: 1px solid var(--border-input);
+    border-radius: 3px;
+    color: rgba(68, 68, 68, 0.5);
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 17px;
+}
+
+.modal-input::placeholder {
+    color: rgba(68, 68, 68, 0.5);
+}
+
+.modal-input:hover {
+    border-color: var(--border-input-hover);
+}
+
+.modal-input:focus {
+    border-color: var(--basic-black);
+    color: var(--socials-discount-text);
+}
+
+.modal-input:focus::placeholder {
+    color: var(--socials-discount-text);
+}
+
+.modal-input:invalid {
+    border-color: var(--hover-red);
+    color: var(--hover-red);
+}
+
+.modal-input.error {
+    border-color: var(--hover-red);
+    color: var(--hover-red);
+}
+
+.modal-input:invalid::placeholder {
+    color: var(--hover-red);
+}
+
+.modal-input.error::placeholder {
+    color: var(--hover-red);
+}
+
+.modal-letter {
+    margin: 0 0 37px;
+    padding: 0;
+    font-family: "RobotoB", "Arial", "sans-serif";
+    font-size: 45px;
+    line-height: 53px;
+}
+
+.modal-message {
+    width: 760px;
+    height: 118px;
+    border: 2px solid var(--border-input);
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 14px 15px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: "Roboto", "Arial", "sans-serif";
+    color: rgba(68, 68, 68, 0.5);
+    resize: none;
+}
+
+.modal-message:hover {
+    border-color: var(--border-input-hover);
+}
+
+.modal-message:focus {
+    border-color: var(--basic-black);
+    color: var(--socials-discount-text);
+}
+
+.modal-message:focus::placeholder {
+    color: var(--socials-discount-text);
+}
+
+.modal-message:invalid {
+    border-color: var(--hover-red);
+    color: var(--hover-red);
+}
+
+.modal-message.error {
+    border-color: var(--hover-red);
+    color: var(--hover-red);
+}
+
+.modal-message:invalid::placeholder {
+    color: var(--hover-red);
+}
+
+.modal-message.error::placeholder {
+    color: var(--hover-red);
+}
+
+.modal-close {
+    width: 21px;
+    height: 21px;
+    display: block;
+    border: none;
+    background: url(../img/close-cross.svg) no-repeat 0 0;
+    position: absolute;
+    top: 60px;
+    right: 89px;
+    top: 76px;
+    cursor: pointer;
+    opacity: 0.3;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 1;
+}
+
+.modal-close:active {
+    opacity: 0.1;
+}
+
+.modal-submit {
+    min-width: 260px;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 140px;
+    border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
