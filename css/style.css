@@ -37,7 +37,6 @@
     font-weight: 545;
     color: var(--basic-background);
     text-transform: none;
-    background-color: var( #888888);
     background-image: url("../img/bg.jpg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -180,7 +179,7 @@ img {
 }
 
 .current {
-    background-image: url(../img/icon-ellipse.svg);
+    background-image: url("../img/icon-ellipse.svg");
 }
 
 .slides h1 {
@@ -263,7 +262,7 @@ img {
     text-decoration: none;
 }
 
-.slide1 h1 {
+.slide-1 h1 {
     font-size: 55px;
     line-height: 55px;
     align-items: center;
@@ -271,7 +270,7 @@ img {
     width: 398px;
 }
 
-.slide2 h1 {
+.slide-2 h1 {
     display: flex;
     font-size: 55px;
     line-height: 55px;
@@ -282,16 +281,16 @@ img {
     margin-bottom: 49px;
 }
 
-.slide2 p {
+.slide-2 p {
     margin-bottom: 27px;
 }
 
-.slide2 img {
+.slide-2 img {
     position: absolute;
     right: 182px;
 }
 
-.slide3 h1 {
+.slide-3 h1 {
     font-size: 55px;
     line-height: 55px;
     align-items: center;
@@ -301,27 +300,22 @@ img {
     margin-bottom: 49px;
 }
 
-.slide3 img {
+.slide-3 img {
     position: absolute;
     right: 182px;
 }
 
-.slide3 p {
+.slide-3 p {
     margin-bottom: 27px;
 }
 
-.slide2,
-.slide3 {
+.slide-2,
+.slide-3 {
     display: none;
 }
 
-.slide2-img {
+.slide-2-img {
     display: inline;
-}
-
-.slide11 h1 {
-    width: 538px;
-    height: 111px;
 }
 
 .slide p {
@@ -451,7 +445,11 @@ img {
     width: 375px;
 }
 
-.description-block table td {
+.description-block table {
+    padding: 1px;
+}
+
+.description-block td {
     padding: 1px;
 }
 
@@ -478,7 +476,7 @@ img {
 }
 
 .development-title {
-    color: #283136;
+    color: var(--basic-background);
 }
 
 .development-list {
@@ -591,7 +589,7 @@ img {
     background-repeat: no-repeat;
     background-position: 0 0;
     left: 252px;
-    top: 17;
+    top: 17px;
     z-index: 200;
 }
 
@@ -692,13 +690,13 @@ img {
 }
 
 .map {
-    background-color: red;
+    background-color: var(--basic-red);
     min-height: 416px;
     background-repeat: no-repeat;
     padding: 54px 0;
     background-size: cover;
     box-sizing: border-box;
-    background: url(../img/map1.png);
+    background: url("../img/map1.png");
 }
 
 .footer-block-4 {
@@ -951,7 +949,20 @@ img {
     width: 17px;
     height: 17px;
     border: 4px solid var(--basik-radioblack);
+    opacity: 0.3;
     border-radius: 50%;
+}
+
+.radio-input+label:hover::before,
+.radio-input:checked+label:hover::after,
+.radio-input+label:focus::before,
+.radio-input:checked+label:focus::after {
+    opacity: 1;
+}
+
+.radio-input+label:disabled::before,
+.radio-input:checked+label:disabled::after {
+    opacity: 0.3;
 }
 
 .radio-input:checked+label::after {
@@ -964,6 +975,7 @@ img {
     border-radius: 50%;
     background-color: green;
     background-image: url("../img/oval.svg");
+    opacity: 0.3;
 }
 
 .grid-item,
@@ -1045,11 +1057,11 @@ img {
     color: var(--basic-black);
 }
 
-.Pink-App {
+.pink-app {
     order: -2;
 }
 
-.Sedona {
+.sedona {
     order: -2;
 }
 
@@ -1057,7 +1069,7 @@ img {
     order: 0;
 }
 
-.Barbershop {
+.barbershop {
     order: -1;
 }
 
@@ -1094,7 +1106,7 @@ img {
     top: 0;
     width: 25px;
     height: 23px;
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url("../img/checkbox-off.svg");
     opacity: 0.4;
     background-repeat: no-repeat;
 }
@@ -1240,11 +1252,11 @@ img {
     opacity: 0.3;
 }
 
-.site-group-item span {
+.site-group-item div {
     opacity: 0;
 }
 
-.site-group-item:hover span {
+.site-group-item:hover div {
     opacity: 1;
 }
 
@@ -1409,7 +1421,7 @@ img {
     left: 0;
     margin: auto;
     background: var(--basic-white);
-    box-shadow: 0 20px 40px 0 var( --background);
+    box-shadow: 0 20px 40px 0 var(--background);
     width: 960px;
     height: 590px;
     padding: 63px 99px 84px 100px;
@@ -1594,7 +1606,7 @@ img {
     height: 21px;
     display: block;
     border: none;
-    background: url(../img/close-cross.svg) no-repeat 0 0;
+    background: url("../img/close-cross.svg") no-repeat 0 0;
     position: absolute;
     top: 60px;
     right: 89px;
