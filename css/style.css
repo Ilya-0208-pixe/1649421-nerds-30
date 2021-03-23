@@ -443,14 +443,19 @@ img {
 
 .description-block table {
     width: 375px;
-}
-
-.description-block table {
+    margin-left: -3px;
     padding: 1px;
 }
 
 .description-block td {
-    padding: 1px;
+    padding: 0;
+    padding-bottom: 7px;
+}
+
+.description-block td:nth-child(2) {
+    padding: 0;
+    padding-bottom: 7px;
+    padding-left: 2px;
 }
 
 .description h3 {
@@ -458,6 +463,8 @@ img {
     line-height: 45px;
     margin-top: 34px;
     margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 0.20px;
 }
 
 .description p {
@@ -653,14 +660,14 @@ img {
 
 .values {
     font-weight: bold;
-    font-size: 45px;
-    line-height: 68px;
+    font-size: 47px;
+    line-height: 67px;
     color: var(--basic-black);
 }
 
 .description-block h4 {
     margin-top: 33px;
-    margin-bottom: 31px;
+    margin-bottom: 29px;
     margin-left: 19px;
 }
 
@@ -1019,7 +1026,7 @@ img {
     left: 0;
     bottom: 0px;
     width: 360px;
-    height: 231px;
+    min-height: 231px;
     margin: 0 auto;
     background: var(--basic-white);
     align-items: center;
@@ -1227,7 +1234,7 @@ img {
     font-size: 16px;
     line-height: 18px;
     width: 255px;
-    height: 37px;
+    min-height: 37px;
     margin-left: 51px;
     margin-bottom: 32px;
 }
