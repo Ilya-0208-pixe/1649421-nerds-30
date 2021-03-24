@@ -444,20 +444,20 @@ img {
 }
 
 .description-block table {
-    width: 375px;
-    margin-left: -3px;
+    width: 369px;
+    margin-left: 0px;
     padding: 1px;
 }
 
 .description-block td {
     padding: 0;
-    padding-bottom: 7px;
+    padding-bottom: 9px;
 }
 
 .description-block td:nth-child(2) {
     padding: 0;
     padding-bottom: 7px;
-    padding-left: 2px;
+    padding-left: 8px;
 }
 
 .description h3 {
@@ -662,8 +662,8 @@ img {
 
 .values {
     font-weight: bold;
-    font-size: 47px;
-    line-height: 67px;
+    font-size: 45px;
+    line-height: 64px;
     color: var(--basic-black);
 }
 
